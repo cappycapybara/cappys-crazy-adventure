@@ -54,6 +54,7 @@ export default function Home() {
           <Slider {...settings}>
             {Array.from({ length: 38 }, (_, i) => i + 1).map((imageNumber) => (
               <img
+                key={imageNumber}
                 src={`/slides/${imageNumber}.jpg`}
                 alt={`capybara comic ${imageNumber}`}
                 style={{ maxHeight: "90vh" }}
